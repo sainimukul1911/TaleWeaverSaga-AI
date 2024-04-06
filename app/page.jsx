@@ -8,7 +8,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 function HomePage() {
   const [generatedStory, setGeneratedStory] = useState('');
 
-  const apiKey = process.env.GEMINI_API_KEY;
+  const apiKey = process.env.NEXT_PUBLIC_API_KEY;
 
   const genAI = new GoogleGenerativeAI(apiKey);
 
