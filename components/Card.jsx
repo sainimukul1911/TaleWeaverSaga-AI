@@ -47,7 +47,7 @@ function StoryInput({ onGenerateStory }) {
       id="storyPrompt"
       name="storyPrompt"
       rows={5}
-      className="w-full p-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 resize-none bg-gray-50"
+      className="w-full p-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 resize-none bg-gray-50 text-black"
       value={storyPrompt}
       onChange={handleInputChange}
       required
