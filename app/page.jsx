@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import StoryInput from '../components/Card';
 import GeneratedStory from '../components/AIUI';
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import TextToSpeech from '../components/TTV';
 
 function HomePage() {
   const [generatedStory, setGeneratedStory] = useState('');
@@ -100,6 +101,7 @@ function HomePage() {
     <div className="bg-gradient-to-br from-green-400 to-blue-500 min-h-screen flex flex-col justify-center items-center py-8">
       <StoryInput onGenerateStory={generateStory} />
       {generatedStory && <GeneratedStory story={generatedStory} />}
+      {generatedStory && <TextToSpeech Text={generatedStory} />}
     </div>
     );
   }
