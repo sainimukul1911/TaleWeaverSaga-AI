@@ -31,7 +31,7 @@ function HomePage() {
     let response;
 
     if (imageFile) {
-      const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+      const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash-lite" });
 
       const prompt = `Based on the Image I have provided , make a story, any additional detail I will provide now - ${storyPrompt}`;
 
